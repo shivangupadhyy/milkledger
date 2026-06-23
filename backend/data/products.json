@@ -1,0 +1,37 @@
+[
+  {
+    "_id": "f1eb6ebb-a7c9-43c1-add0-96564517d6cd",
+    "status": "Active",
+    "createdAt": "2026-06-23T08:30:41.318Z",
+    "name": "Cow Milk Test 1782203441318",
+    "pricePerLiter": 65.5,
+    "category": "Milk"
+  },
+  {
+    "_id": "c1dd6f3b-b63d-43ef-9259-ceebcee9ccdf",
+    "status": "Active",
+    "createdAt": "2026-06-23T09:01:02.086Z",
+    "name": "Buffalo Milk",
+    "pricePerLiter": 60,
+    "category": "Milk",
+    "unit": "Liter"
+  },
+  {
+    "_id": "95a8dde3-3ada-4ce1-af0e-17eee1a7f63e",
+    "status": "Active",
+    "createdAt": "2026-06-23T09:10:49.869Z",
+    "name": "Cow Milk Test 1782205849868",
+    "pricePerLiter": 65.5,
+    "category": "Milk"
+  },
+  {
+    "_id": "b4b5eabd-d3a3-42b5-8236-10c0b7b811c0",
+    "status": "Active",
+    "createdAt": "2026-06-23T09:15:28.195Z",
+    "name": "Skimmed Milk",
+    "pricePerLiter": 48,
+    "category": "Milk",
+    "unit": "Liter",
+    "updatedAt": "2026-06-23T09:16:24.611Z"
+  }
+]

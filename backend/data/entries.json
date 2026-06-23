@@ -1,0 +1,33 @@
+[
+  {
+    "_id": "8efb5d51-1bad-4332-9c48-66b681528228",
+    "createdAt": "2026-06-23T08:30:41.323Z",
+    "date": "2026-06-23T00:00:00.000Z",
+    "items": [
+      {
+        "productId": "b4b5eabd-d3a3-42b5-8236-10c0b7b811c0",
+        "productName": "Skimmed Milk",
+        "quantity": 20,
+        "price": 48,
+        "total": 960
+      }
+    ],
+    "grandTotal": 960,
+    "updatedAt": "2026-06-23T09:19:03.076Z"
+  },
+  {
+    "_id": "2bd1b892-65d5-47f3-9fc8-7de17e1b67c7",
+    "createdAt": "2026-06-23T09:10:49.874Z",
+    "date": "2026-06-23T00:00:00.000Z",
+    "items": [
+      {
+        "productId": "95a8dde3-3ada-4ce1-af0e-17eee1a7f63e",
+        "productName": "Cow Milk Test 1782205849868",
+        "quantity": 10,
+        "price": 65.5,
+        "total": 655
+      }
+    ],
+    "grandTotal": 655
+  }
+]

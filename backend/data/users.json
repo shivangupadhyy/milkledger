@@ -1,0 +1,40 @@
+[
+  {
+    "_id": "35792b1d-2f98-48c8-b133-6e4621b9eca4",
+    "createdAt": "2026-06-23T08:30:41.314Z",
+    "name": "Test User",
+    "email": "test_1782203441311@test.com",
+    "password": "hashedpassword123",
+    "businessName": "Test Dairy"
+  },
+  {
+    "_id": "a9addec4-7bc7-4739-bb9d-5b864984d78f",
+    "createdAt": "2026-06-23T08:41:35.379Z",
+    "name": "Sandeep",
+    "email": "Shivangupadhyy@gmail.com",
+    "password": "$2a$10$t2kQT13vWfworVkH09mSLuUyFUePlzBZWOhhX9BxMn282pKuquHnm",
+    "businessName": "Sandeep Provision store",
+    "businessAddress": "",
+    "gstNumber": "",
+    "currency": "INR"
+  },
+  {
+    "_id": "d5802471-460c-4ec7-8e3a-0ac5f6239862",
+    "createdAt": "2026-06-23T08:59:07.793Z",
+    "name": "Shivang",
+    "email": "shivang@test.com",
+    "password": "$2a$10$gVEtwKFZv14DPRViCoFXz.yJsGruNOW7KYf37eR4GhdBh/7tq.GmS",
+    "businessName": "Shivang Dairy",
+    "businessAddress": "",
+    "gstNumber": "",
+    "currency": "INR"
+  },
+  {
+    "_id": "50b366fb-17ca-4194-8588-28c82e479944",
+    "createdAt": "2026-06-23T09:10:49.862Z",
+    "name": "Test User",
+    "email": "test_1782205849859@test.com",
+    "password": "hashedpassword123",
+    "businessName": "Test Dairy"
+  }
+]
