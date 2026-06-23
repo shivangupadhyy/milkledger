@@ -36,5 +36,16 @@
     "email": "test_1782205849859@test.com",
     "password": "hashedpassword123",
     "businessName": "Test Dairy"
+  },
+  {
+    "_id": "e2fdfb90-1a9d-4266-8ade-963a0b3f0f67",
+    "createdAt": "2026-06-23T12:09:26.934Z",
+    "name": "sandeep Provision",
+    "email": "SandeepStores683@gmail.com",
+    "password": "$2a$10$aHljnDIKMIEBbSnHqD50me2wb6nnfWksmhys0Y4MU9n4nhODW5oqa",
+    "businessName": "Sandeep Provision Store",
+    "businessAddress": "",
+    "gstNumber": "",
+    "currency": "INR"
   }
 ]

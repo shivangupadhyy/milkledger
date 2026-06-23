@@ -2,18 +2,18 @@
   {
     "_id": "8efb5d51-1bad-4332-9c48-66b681528228",
     "createdAt": "2026-06-23T08:30:41.323Z",
-    "date": "2026-06-23T00:00:00.000Z",
+    "date": "2026-06-25T00:00:00.000Z",
     "items": [
       {
         "productId": "b4b5eabd-d3a3-42b5-8236-10c0b7b811c0",
         "productName": "Skimmed Milk",
-        "quantity": 20,
+        "quantity": 10,
         "price": 48,
-        "total": 960
+        "total": 480
       }
     ],
-    "grandTotal": 960,
-    "updatedAt": "2026-06-23T09:19:03.076Z"
+    "grandTotal": 480,
+    "updatedAt": "2026-06-23T10:16:04.478Z"
   },
   {
     "_id": "2bd1b892-65d5-47f3-9fc8-7de17e1b67c7",
@@ -29,5 +29,21 @@
       }
     ],
     "grandTotal": 655
+  },
+  {
+    "_id": "c5b8f92f-4970-452f-a13f-c870a4a63851",
+    "createdAt": "2026-06-23T10:06:18.136Z",
+    "date": "2026-06-25T00:00:00.000Z",
+    "items": [
+      {
+        "productId": "b4b5eabd-d3a3-42b5-8236-10c0b7b811c0",
+        "productName": "Skimmed Milk",
+        "quantity": 10,
+        "price": 48,
+        "total": 480
+      }
+    ],
+    "grandTotal": 480,
+    "updatedAt": "2026-06-23T10:14:51.154Z"
   }
 ]

@@ -82,13 +82,9 @@ const Layout = ({ children }) => {
       
       {/* Mobile Header (no-print) */}
       <header className="flex md:hidden items-center justify-between px-6 py-4 bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 shadow-sm no-print">
-        <div className="flex items-center space-x-3">
-          <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-primary-600 to-indigo-500 flex items-center justify-center text-white font-bold text-lg shadow-md shadow-primary-500/20">
-            ML
-          </div>
-          <div>
-            <h1 className="font-bold text-slate-800 dark:text-slate-100 leading-tight">MilkLedger</h1>
-            <p className="text-xs text-slate-500 dark:text-slate-400 font-medium">Dairy Purchase Manager</p>
+        <div className="flex items-center">
+          <div className="bg-white px-3 py-1.5 rounded-xl shadow-sm border border-slate-100/50 flex items-center">
+            <img src="/logo.png" alt="MilkLedger Logo" className="h-7 object-contain" />
           </div>
         </div>
 
@@ -125,14 +121,11 @@ const Layout = ({ children }) => {
       `}>
         <div>
           {/* Logo Section */}
-          <div className="flex items-center space-x-3 px-6 py-6 border-b border-slate-100 dark:border-slate-800/80">
-            <div className="w-11 h-11 rounded-xl bg-gradient-to-tr from-primary-600 to-indigo-500 flex items-center justify-center text-white font-bold text-xl shadow-md shadow-primary-500/20">
-              ML
+          <div className="flex items-center justify-between px-5 py-5 border-b border-slate-100 dark:border-slate-800/80">
+            <div className="bg-white px-3 py-1.5 rounded-xl shadow-sm border border-slate-100/50 flex items-center">
+              <img src="/logo.png" alt="MilkLedger Logo" className="h-7 object-contain" />
             </div>
-            <div>
-              <h2 className="font-bold text-slate-800 dark:text-slate-100 tracking-tight leading-none text-base">MilkLedger</h2>
-              <span className="text-[10px] text-primary-500 dark:text-primary-400 font-semibold tracking-wider uppercase mt-1 inline-block">Enterprise</span>
-            </div>
+            <span className="text-[9px] text-primary-500 dark:text-primary-400 font-bold tracking-wider uppercase px-2 py-0.5 bg-primary-50 dark:bg-primary-950/30 rounded-md">Enterprise</span>
           </div>
 
           {/* Navigation Links */}
