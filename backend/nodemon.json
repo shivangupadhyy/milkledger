@@ -1,0 +1,6 @@
+{
+  "watch": ["*.js", "config/", "controllers/", "middleware/", "models/", "db/"],
+  "ignore": ["data/", "tests/", "node_modules/"],
+  "ext": "js,mjs,cjs",
+  "delay": "1000"
+}

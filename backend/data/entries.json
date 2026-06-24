@@ -1,49 +1,95 @@
 [
   {
-    "_id": "8efb5d51-1bad-4332-9c48-66b681528228",
-    "createdAt": "2026-06-23T08:30:41.323Z",
-    "date": "2026-06-25T00:00:00.000Z",
-    "items": [
-      {
-        "productId": "b4b5eabd-d3a3-42b5-8236-10c0b7b811c0",
-        "productName": "Skimmed Milk",
-        "quantity": 10,
-        "price": 48,
-        "total": 480
-      }
-    ],
-    "grandTotal": 480,
-    "updatedAt": "2026-06-23T10:16:04.478Z"
-  },
-  {
     "_id": "2bd1b892-65d5-47f3-9fc8-7de17e1b67c7",
     "createdAt": "2026-06-23T09:10:49.874Z",
     "date": "2026-06-23T00:00:00.000Z",
     "items": [
       {
+        "productId": "c1dd6f3b-b63d-43ef-9259-ceebcee9ccdf",
+        "productName": "1 ltr Toned ",
+        "quantity": 15,
+        "price": 56.87,
+        "total": 853.05
+      },
+      {
         "productId": "95a8dde3-3ada-4ce1-af0e-17eee1a7f63e",
-        "productName": "Cow Milk Test 1782205849868",
-        "quantity": 10,
-        "price": 65.5,
-        "total": 655
-      }
-    ],
-    "grandTotal": 655
-  },
-  {
-    "_id": "c5b8f92f-4970-452f-a13f-c870a4a63851",
-    "createdAt": "2026-06-23T10:06:18.136Z",
-    "date": "2026-06-25T00:00:00.000Z",
-    "items": [
+        "productName": "1/2 Full Cream",
+        "quantity": 24,
+        "price": 34.9,
+        "total": 837.6
+      },
       {
         "productId": "b4b5eabd-d3a3-42b5-8236-10c0b7b811c0",
-        "productName": "Skimmed Milk",
+        "productName": "Full Cream 1 ltr",
+        "quantity": 39,
+        "price": 69.8,
+        "total": 2722.2
+      },
+      {
+        "productId": "6e572a1e-c6b0-4236-8d9a-5140721b50b9",
+        "productName": "Full Cream 2ltr",
+        "quantity": 8,
+        "price": 137,
+        "total": 1096
+      },
+      {
+        "productId": "69f8f288-b53d-454b-8bd7-795c67fce30a",
+        "productName": "1/2 tonned ",
         "quantity": 10,
-        "price": 48,
-        "total": 480
+        "price": 28.51,
+        "total": 285.1
+      },
+      {
+        "productId": "9c90112f-cd09-4736-93a9-b7c82e8356f7",
+        "productName": "1 ltr Cow Milk",
+        "quantity": 5,
+        "price": 58.4,
+        "total": 292
+      },
+      {
+        "productId": "cca09a51-fa6a-4fd6-818d-8eff0c50e426",
+        "productName": "1/2 Cow Milk",
+        "quantity": 10,
+        "price": 29.68,
+        "total": 296.8
+      },
+      {
+        "productId": "100620d8-8487-4c04-8ae9-36e1aaab16ef",
+        "productName": "Plain Chach",
+        "quantity": 20,
+        "price": 9.5,
+        "total": 190
+      },
+      {
+        "productId": "c006eb17-b64d-421a-9f43-5cc4f2b3fd87",
+        "productName": "Masala Chach",
+        "quantity": 10,
+        "price": 9.5,
+        "total": 95
+      },
+      {
+        "productId": "15bc69e1-5420-471b-8f92-af994a9890d3",
+        "productName": "bufflow Milk 1ltr",
+        "quantity": 1,
+        "price": 76.95,
+        "total": 76.95
+      },
+      {
+        "productId": "673a44d7-f691-4675-b419-f289616a8e48",
+        "productName": "Dahi 1kg",
+        "quantity": 2,
+        "price": 76.15,
+        "total": 152.3
+      },
+      {
+        "productId": "ab4380bc-e01b-4514-b558-75e6025e6b3f",
+        "productName": "1/2 kg dahi",
+        "quantity": 16,
+        "price": 32.13,
+        "total": 514.08
       }
     ],
-    "grandTotal": 480,
-    "updatedAt": "2026-06-23T10:14:51.154Z"
+    "grandTotal": 7411.08,
+    "updatedAt": "2026-06-23T17:29:36.523Z"
   }
 ]

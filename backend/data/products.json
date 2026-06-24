@@ -1,37 +1,123 @@
 [
   {
-    "_id": "f1eb6ebb-a7c9-43c1-add0-96564517d6cd",
-    "status": "Active",
-    "createdAt": "2026-06-23T08:30:41.318Z",
-    "name": "Cow Milk Test 1782203441318",
-    "pricePerLiter": 65.5,
-    "category": "Milk"
-  },
-  {
     "_id": "c1dd6f3b-b63d-43ef-9259-ceebcee9ccdf",
     "status": "Active",
     "createdAt": "2026-06-23T09:01:02.086Z",
-    "name": "Buffalo Milk",
-    "pricePerLiter": 60,
+    "name": "1 ltr Toned ",
+    "pricePerLiter": 56.87,
     "category": "Milk",
-    "unit": "Liter"
+    "unit": "Liter",
+    "updatedAt": "2026-06-23T17:18:17.916Z"
   },
   {
     "_id": "95a8dde3-3ada-4ce1-af0e-17eee1a7f63e",
     "status": "Active",
     "createdAt": "2026-06-23T09:10:49.869Z",
-    "name": "Cow Milk Test 1782205849868",
-    "pricePerLiter": 65.5,
-    "category": "Milk"
+    "name": "1/2 Full Cream",
+    "pricePerLiter": 34.9,
+    "category": "Milk",
+    "unit": "Liter",
+    "updatedAt": "2026-06-23T17:17:35.167Z"
   },
   {
     "_id": "b4b5eabd-d3a3-42b5-8236-10c0b7b811c0",
     "status": "Active",
     "createdAt": "2026-06-23T09:15:28.195Z",
-    "name": "Skimmed Milk",
-    "pricePerLiter": 48,
+    "name": "Full Cream 1 ltr",
+    "pricePerLiter": 69.8,
     "category": "Milk",
-    "unit": "Liter",
-    "updatedAt": "2026-06-23T09:16:24.611Z"
+    "unit": "1 Liter",
+    "updatedAt": "2026-06-23T17:16:55.446Z"
+  },
+  {
+    "_id": "6e572a1e-c6b0-4236-8d9a-5140721b50b9",
+    "status": "Active",
+    "createdAt": "2026-06-23T17:15:48.196Z",
+    "name": "Full Cream 2ltr",
+    "pricePerLiter": 137,
+    "category": "Milk",
+    "unit": "2 Liter",
+    "updatedAt": "2026-06-23T17:24:12.974Z"
+  },
+  {
+    "_id": "69f8f288-b53d-454b-8bd7-795c67fce30a",
+    "status": "Active",
+    "createdAt": "2026-06-23T17:18:56.303Z",
+    "name": "1/2 tonned ",
+    "pricePerLiter": 28.51,
+    "category": "Milk",
+    "unit": "Liter"
+  },
+  {
+    "_id": "9c90112f-cd09-4736-93a9-b7c82e8356f7",
+    "status": "Active",
+    "createdAt": "2026-06-23T17:19:28.498Z",
+    "name": "1 ltr Cow Milk",
+    "pricePerLiter": 58.4,
+    "category": "Milk",
+    "unit": "Liter"
+  },
+  {
+    "_id": "cca09a51-fa6a-4fd6-818d-8eff0c50e426",
+    "status": "Active",
+    "createdAt": "2026-06-23T17:20:04.563Z",
+    "name": "1/2 Cow Milk",
+    "pricePerLiter": 29.68,
+    "category": "Milk",
+    "unit": "Liter"
+  },
+  {
+    "_id": "100620d8-8487-4c04-8ae9-36e1aaab16ef",
+    "status": "Active",
+    "createdAt": "2026-06-23T17:20:39.480Z",
+    "name": "Plain Chach",
+    "pricePerLiter": 9.5,
+    "category": "Milk",
+    "unit": "Liter"
+  },
+  {
+    "_id": "c006eb17-b64d-421a-9f43-5cc4f2b3fd87",
+    "status": "Active",
+    "createdAt": "2026-06-23T17:21:13.360Z",
+    "name": "Masala Chach",
+    "pricePerLiter": 9.5,
+    "category": "Milk",
+    "unit": "Liter"
+  },
+  {
+    "_id": "15bc69e1-5420-471b-8f92-af994a9890d3",
+    "status": "Active",
+    "createdAt": "2026-06-23T17:21:48.365Z",
+    "name": "bufflow Milk 1ltr",
+    "pricePerLiter": 76.95,
+    "category": "Milk",
+    "unit": "Liter"
+  },
+  {
+    "_id": "673a44d7-f691-4675-b419-f289616a8e48",
+    "status": "Active",
+    "createdAt": "2026-06-23T17:22:27.933Z",
+    "name": "Dahi 1kg",
+    "pricePerLiter": 76.15,
+    "category": "Milk",
+    "unit": "Liter"
+  },
+  {
+    "_id": "ab4380bc-e01b-4514-b558-75e6025e6b3f",
+    "status": "Active",
+    "createdAt": "2026-06-23T17:23:04.797Z",
+    "name": "1/2 kg dahi",
+    "pricePerLiter": 32.13,
+    "category": "Milk",
+    "unit": "Liter"
+  },
+  {
+    "_id": "3d1e5dba-9fe3-4343-b0e6-ce3e1cb2c4c8",
+    "status": "Active",
+    "createdAt": "2026-06-23T17:23:39.124Z",
+    "name": "200g dahi",
+    "pricePerLiter": 18.73,
+    "category": "Milk",
+    "unit": "Liter"
   }
 ]

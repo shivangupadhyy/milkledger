@@ -56,8 +56,21 @@ const startServer = async () => {
   // Connect to DB (Mongo with JSON fallback)
   await connectDB();
 
-  app.listen(PORT, () => {
+  const server = app.listen(PORT, () => {
     console.log(`🚀 MilkLedger Backend Server is running on port ${PORT}`);
+  });
+
+  // Graceful error handling for port conflicts
+  server.on('error', (err) => {
+    if (err.code === 'EADDRINUSE') {
+      console.log(`⚠️  Port ${PORT} is busy. Retrying in 2 seconds...`);
+      setTimeout(() => {
+        server.close();
+        server.listen(PORT);
+      }, 2000);
+    } else {
+      console.error('❌ Server error:', err);
+    }
   });
 };
 
