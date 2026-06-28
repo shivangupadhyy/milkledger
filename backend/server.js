@@ -60,13 +60,16 @@ if (process.env.NODE_ENV === 'production') {
   });
 }
 
-// Start Server
-const PORT = process.env.PORT || 5000;
+// Connect to DB (Mongo with JSON fallback)
+// Initiate connection immediately (Mongoose buffers queries, so this works nicely on Serverless)
+connectDB();
 
-const startServer = async () => {
-  // Connect to DB (Mongo with JSON fallback)
-  await connectDB();
+// Export app for serverless environments like Vercel
+module.exports = app;
 
+// Only start the listening server if file is run directly (local development or traditional server)
+if (require.main === module) {
+  const PORT = process.env.PORT || 5000;
   const server = app.listen(PORT, () => {
     console.log(`🚀 MilkLedger Backend Server is running on port ${PORT}`);
   });
@@ -83,6 +86,4 @@ const startServer = async () => {
       console.error('❌ Server error:', err);
     }
   });
-};
-
-startServer();
+}
