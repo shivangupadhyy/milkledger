@@ -1,6 +1,7 @@
 require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
+const path = require('path');
 const { connectDB } = require('./config/db');
 
 const app = express();
@@ -48,6 +49,16 @@ app.get('/api/reports', auth, reportController.getReports);
 app.get('/api/health', (req, res) => {
   res.json({ status: 'ok', timestamp: new Date() });
 });
+
+// Serve static assets in production
+if (process.env.NODE_ENV === 'production') {
+  app.use(express.static(path.join(__dirname, '../frontend/dist')));
+  app.get('*', (req, res) => {
+    if (!req.path.startsWith('/api')) {
+      res.sendFile(path.resolve(__dirname, '../frontend', 'dist', 'index.html'));
+    }
+  });
+}
 
 // Start Server
 const PORT = process.env.PORT || 5000;
