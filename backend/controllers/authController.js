@@ -107,7 +107,7 @@ exports.forgotPassword = async (req, res) => {
       return res.status(404).json({ msg: 'User with this email not found' });
     }
 
-    if (user.businessName.toLowerCase() !== businessName.toLowerCase()) {
+    if ((user.businessName || '').toLowerCase() !== businessName.toLowerCase()) {
       return res.status(400).json({ msg: 'Business name does not match our records' });
     }
 
