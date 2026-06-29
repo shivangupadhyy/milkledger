@@ -17,7 +17,9 @@ const connectDB = async () => {
 
   try {
     // If it's already connecting (readyState === 2), mongoose.connect will resolve when ready.
-    await mongoose.connect(uri);
+    await mongoose.connect(uri, {
+      serverSelectionTimeoutMS: 3000 // 3 seconds connection timeout
+    });
     mongoConnectionError = null;
     console.log('\x1b[32m%s\x1b[0m', '🔌 Connected to MongoDB successfully!');
     return true;
