@@ -1,0 +1,13 @@
+[33m610fd1a[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m changes in Auth Controller
+[33mc65a2f4[m changes in the backend
+[33m6708736[m changes
+[33md01d022[m changes
+[33m0f1c77a[m changes
+[33mc3cd868[m chnages
+[33m51fa8b7[m CHANGES
+[33m657e29f[m changes
+[33maab971f[m changes
+[33ma83d2b1[m changes
+[33mb218c93[m feat: initialize backend project structure with nodemon, environment config, and sample data sets
+[33m4feeb96[m feat: scaffold MilkLedger frontend authentication pages, layout, and backend data structure
+[33me1d0ceb[m chore: initialize frontend and backend node_modules dependencies

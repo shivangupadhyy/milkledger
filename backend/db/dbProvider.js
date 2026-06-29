@@ -5,11 +5,23 @@ const { UserStore, ProductStore, DailyEntryStore } = require('./jsonStore');
 const dbProvider = {
   User: {
     find: async (query = {}) => {
-      if (getDbMode() === 'mongo') return await MongoModels.User.find(query);
+      if (getDbMode() === 'mongo') {
+        let mongoQuery = { ...query };
+        if (mongoQuery.email && typeof mongoQuery.email === 'string') {
+          mongoQuery.email = { $regex: new RegExp('^' + mongoQuery.email.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&') + '$', 'i') };
+        }
+        return await MongoModels.User.find(mongoQuery);
+      }
       return await UserStore.find(query);
     },
     findOne: async (query = {}) => {
-      if (getDbMode() === 'mongo') return await MongoModels.User.findOne(query);
+      if (getDbMode() === 'mongo') {
+        let mongoQuery = { ...query };
+        if (mongoQuery.email && typeof mongoQuery.email === 'string') {
+          mongoQuery.email = { $regex: new RegExp('^' + mongoQuery.email.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&') + '$', 'i') };
+        }
+        return await MongoModels.User.findOne(mongoQuery);
+      }
       return await UserStore.findOne(query);
     },
     findById: async (id) => {

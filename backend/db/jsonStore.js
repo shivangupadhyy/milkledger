@@ -35,13 +35,23 @@ const UserStore = {
   find: async (query = {}) => {
     const list = readData('users');
     return list.filter(item => {
-      return Object.keys(query).every(key => item[key] === query[key]);
+      return Object.keys(query).every(key => {
+        if (key === 'email' && typeof item[key] === 'string' && typeof query[key] === 'string') {
+          return item[key].toLowerCase() === query[key].toLowerCase();
+        }
+        return item[key] === query[key];
+      });
     });
   },
   findOne: async (query = {}) => {
     const list = readData('users');
     return list.find(item => {
-      return Object.keys(query).every(key => item[key] === query[key]);
+      return Object.keys(query).every(key => {
+        if (key === 'email' && typeof item[key] === 'string' && typeof query[key] === 'string') {
+          return item[key].toLowerCase() === query[key].toLowerCase();
+        }
+        return item[key] === query[key];
+      });
     }) || null;
   },
   findById: async (id) => {
