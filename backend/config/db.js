@@ -1,6 +1,5 @@
 const mongoose = require('mongoose');
 
-let isMongoConnected = false;
 let mongoConnectionError = null;
 
 const connectDB = async () => {
@@ -11,22 +10,26 @@ const connectDB = async () => {
     return false;
   }
 
+  if (mongoose.connection.readyState === 1) {
+    mongoConnectionError = null;
+    return true;
+  }
+
   try {
+    // If it's already connecting (readyState === 2), mongoose.connect will resolve when ready.
     await mongoose.connect(uri);
-    isMongoConnected = true;
     mongoConnectionError = null;
     console.log('\x1b[32m%s\x1b[0m', '🔌 Connected to MongoDB successfully!');
     return true;
   } catch (error) {
     console.error(`❌ MongoDB connection failed: ${error.message}`);
     console.log('\x1b[33m%s\x1b[0m', '💾 Falling back to Local JSON Database Mode.');
-    isMongoConnected = false;
     mongoConnectionError = error.message;
     return false;
   }
 };
 
-const getDbMode = () => isMongoConnected ? 'mongo' : 'json';
+const getDbMode = () => mongoose.connection.readyState === 1 ? 'mongo' : 'json';
 const getMongoConnectionError = () => mongoConnectionError;
 
 module.exports = { connectDB, getDbMode, getMongoConnectionError };

@@ -10,6 +10,12 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+// Ensure Database is connected before serving any request (crucial for Serverless Vercel environment)
+app.use(async (req, res, next) => {
+  await connectDB();
+  next();
+});
+
 // Import Controllers & Middlewares
 const auth = require('./middleware/auth');
 const authController = require('./controllers/authController');
