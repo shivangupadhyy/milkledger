@@ -47,7 +47,13 @@ app.get('/api/reports', auth, reportController.getReports);
 
 // Health Check
 app.get('/api/health', (req, res) => {
-  res.json({ status: 'ok', timestamp: new Date() });
+  const { getDbMode } = require('./config/db');
+  res.json({
+    status: 'ok',
+    timestamp: new Date(),
+    dbMode: getDbMode(),
+    hasMongoUri: !!process.env.MONGODB_URI
+  });
 });
 
 // Serve static assets in production
