@@ -19,7 +19,9 @@ exports.register = async (req, res) => {
       return res.status(400).json({ msg: 'Please enter all required fields' });
     }
 
-    let user = await dbProvider.User.findOne({ email });
+    const normalizedEmail = email.toLowerCase().trim();
+
+    let user = await dbProvider.User.findOne({ email: normalizedEmail });
     if (user) {
       return res.status(400).json({ msg: 'User already exists with this email' });
     }
@@ -30,7 +32,7 @@ exports.register = async (req, res) => {
 
     user = await dbProvider.User.create({
       name,
-      email,
+      email: normalizedEmail,
       password: hashedPassword,
       businessName: businessName || '',
       businessAddress: '',
@@ -65,7 +67,8 @@ exports.login = async (req, res) => {
       return res.status(400).json({ msg: 'Please enter all fields' });
     }
 
-    const user = await dbProvider.User.findOne({ email });
+    const normalizedEmail = email.toLowerCase().trim();
+    const user = await dbProvider.User.findOne({ email: normalizedEmail });
     if (!user) {
       return res.status(400).json({ msg: 'Invalid Credentials' });
     }
@@ -102,7 +105,8 @@ exports.forgotPassword = async (req, res) => {
       return res.status(400).json({ msg: 'Please provide email, business name, and new password' });
     }
 
-    const user = await dbProvider.User.findOne({ email });
+    const normalizedEmail = email.toLowerCase().trim();
+    const user = await dbProvider.User.findOne({ email: normalizedEmail });
     if (!user) {
       return res.status(404).json({ msg: 'User with this email not found' });
     }
