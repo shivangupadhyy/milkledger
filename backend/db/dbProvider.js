@@ -8,7 +8,7 @@ const dbProvider = {
       if (getDbMode() === 'mongo') {
         let mongoQuery = { ...query };
         if (mongoQuery.email && typeof mongoQuery.email === 'string') {
-          mongoQuery.email = { $regex: new RegExp('^' + mongoQuery.email.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&') + '$', 'i') };
+          mongoQuery.email = new RegExp('^' + mongoQuery.email.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&') + '$', 'i');
         }
         return await MongoModels.User.find(mongoQuery);
       }
@@ -18,7 +18,7 @@ const dbProvider = {
       if (getDbMode() === 'mongo') {
         let mongoQuery = { ...query };
         if (mongoQuery.email && typeof mongoQuery.email === 'string') {
-          mongoQuery.email = { $regex: new RegExp('^' + mongoQuery.email.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&') + '$', 'i') };
+          mongoQuery.email = new RegExp('^' + mongoQuery.email.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&') + '$', 'i');
         }
         return await MongoModels.User.findOne(mongoQuery);
       }
