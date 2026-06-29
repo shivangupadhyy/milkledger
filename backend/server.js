@@ -47,12 +47,13 @@ app.get('/api/reports', auth, reportController.getReports);
 
 // Health Check
 app.get('/api/health', (req, res) => {
-  const { getDbMode } = require('./config/db');
+  const { getDbMode, getMongoConnectionError } = require('./config/db');
   res.json({
     status: 'ok',
     timestamp: new Date(),
     dbMode: getDbMode(),
-    hasMongoUri: !!process.env.MONGODB_URI
+    hasMongoUri: !!process.env.MONGODB_URI,
+    mongoError: getMongoConnectionError()
   });
 });
 
