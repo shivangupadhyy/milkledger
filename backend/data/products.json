@@ -119,5 +119,14 @@
     "pricePerLiter": 18.73,
     "category": "Milk",
     "unit": "Liter"
+  },
+  {
+    "_id": "9bd75d4f-efcf-4834-ae51-e11312778139",
+    "status": "Active",
+    "createdAt": "2026-06-28T19:12:34.824Z",
+    "name": "test",
+    "pricePerLiter": 44,
+    "category": "Milk",
+    "unit": "Liter"
   }
 ]
